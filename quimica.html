@@ -1,0 +1,162 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+    
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width">
+        <title> STUDYOU </title>
+        <link rel="stylesheet" href="reset.css">
+        <link rel="stylesheet" href="style.css">
+        <link href="https://fonts.googleapis.com/css2?family=Montserrat&display=swap" rel="stylesheet">
+      
+    </head>
+
+    <body>
+        <header>
+            <div class="caixa">
+                <h1> <img src="logo.png"></h1>
+
+                <nav>
+                    <ul>
+                        <li><a href="index.html">Home</a></li>
+                        <li><a href="calculadora.html">Calculadoras</a></li>
+                        <li><a href="quimica.html">Química</a></li>
+                        <li><a href="contato.html">Contato</a></li>
+                    </ul>
+                </nav>
+            </div>
+        </header>
+
+        <img class="banner" src="banner.jpeg" >
+
+        <main>
+            
+            <div class="video">
+                <h4 class="titulo-principal">Nossa vídeo aula!</h4>
+                <iframe width="560" height="315" src="https://www.youtube.com/embed/wsCmNaiZorY" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+            </section>
+            </div>
+            <section class="principal">
+                <h2 class="titulo-principal"> Cadeias Carbônicas</h2>
+
+                <p ><strong> O que é?</strong></p>
+                <p >As cadeias carbônicas representam a estrutura dos compostos orgânicos.
+                            <br>
+
+                            Elas recebem esse nome porque se formam a partir da ligação dos átomos de carbono.
+                            <br>
+                            Há diversos tipos de cadeia e sua classificação é feita conforme a posição dos átomos de carbono, a ligação entre si, a ligação entre os átomos de hidrogênio ou outros compostos.</p>
+                            <br>
+                            <br>
+                <p ><strong>Classificação</strong></p>
+            
+                <p >Os critérios para classificar as cadeias carbônicas são:
+                            <br>
+                            Fechamento ou não da cadeia;
+                            <br>
+                            Tipos de átomos, com a presença ou não de heteroátomos (átomos que não são de carbono ou hidrogênio);
+                            <br>
+                            Organização dos átomos da cadeia;
+                            <br>
+                            Ligações estabelecidas entre os átomos;
+                            <br>
+                            Elas podem ser abertas, fechadas ou mistas.
+                </p>         
+                            <br>
+                            <br>
+                <p ><strong>Classificação das posições</strong></p>
+                            <br>
+                <p >O carbono também pode ser classificado conforme a sua posição na cadeia em:
+                            <br>
+                            Carbono primário: são os átomos das extremidades das cadeias e que se ligam somente a outro átomo.
+                            <br>
+                            Carbono secundário: é o carbono que se liga a outros dois átomos de carbono na cadeia.
+                            <br>
+                            Carbono terciário: quando o carbono se liga-se a outros três átomos de carbono.
+                            <br>
+                            Carbono quaternário: quando o carbono aparece ligado a outros quatro átomos de carbono.
+                            <br>
+
+            </section>
+
+
+            <section class="resumo">
+                <h3 class="titulo-principal">Resumão</h3>
+            
+                <div class="conteudo-aula">
+                    
+                    <img src="qui.png" class="quimica">
+                </div>
+            </section>
+
+            <section class="exercicio">
+                <h3 class="titulo-principal">Exercícios</h3>
+            
+                <div class="conteudo-aula">
+                    
+            
+                </div>
+
+            </section>
+            <script type="text/javascript">
+ 
+                var contadora =0;
+         
+                function r1(){
+         
+                    var re1 =document.getElementById("txt1").value;
+                    alert(re1);
+         
+                    if(re1=="3"){
+                        resp1.innerHTML="CORRETO!";
+                        contadora=contadora+1;
+                    }
+                    else {
+                        resp1.innerHTML="ERRADO! Resposta correta: 3!";
+                    }
+                }
+         
+                function r2(){
+         
+                    var re2 =document.getElementById("txt2").value;
+                    alert(re2);
+         
+                    if(re2=="2"){
+                        
+                        resp2.innerHTML="CORRETO!";
+                        contadora=contadora+1;
+                    }
+                    else {
+                        resp2.innerHTML="ERRADO! Resposta correta: 2!";
+                    }
+                }
+
+            </script>
+
+            <div id="centro" class=""></div>
+            <div id="f">
+                <table id="perguntas">
+                <form id="for" name="for">
+         
+                    <tr>
+         
+                    <td> Existem quantas classificações de acordo com o fechamento da cadeia? &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<input type="text" name="txt1" id="txt1"><input type="button" class="enviar2" name="btn1" id="btn1" value="Resposta 1" onclick="javascript:r1()"> <div id="resp1"></div></td><br> </tr>
+                    <tr>
+         
+                    <td> Existem quantas classificações de acordo com a disposição dos átomos na cadeia?&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<input type="text" name="txt2" id="txt2"><input type="button" class="enviar2" name="btn2" id="btn2" value="Resposta 2" onclick="javascript:r2()"> <div id="resp2"></div></td></tr>
+                    <div id="pontos"></div>
+                </form>
+            </table> 
+		<script  src="js/index.js"></script>
+
+        </main>
+
+        <footer>
+            <img src="logo.png">
+            <p class="copy">&copy Copyright Luiza Santana - 2022</p>
+        </footer>
+    </body>
+     
+
+
+</html>
