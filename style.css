@@ -256,7 +256,7 @@ td, th {
 
 /** ---------------------------- MEDIA QUERIES ---------------------------- **/
 
-@media screen and (max-width:900px) {
+@media screen and (max-width:800px) and width:100% {
     .caixa, .principal, .conteudo-idealizadores, .mapa-conteudo, .videos, footer, header, .banner {
         width: 100%;
     }
